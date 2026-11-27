@@ -34,15 +34,22 @@ string: xof nworb kciuq ehT
 3.Write a program to find the factorial value of any number entered
 through the keyboard.
 */
-    System.out.println("\nEnter a number: ");
-    int num = input.nextInt();
-    int m = 1;
-    int total = 1;
-    while (num >= m) {
-        total = total * m;
-        m++;
+    System.out.println("\nEnter a number to know tha factorial : ");
+    int number1 =input.nextInt();
+    if (number1 < 0) {
+        System.out.println("Factorial is not defined for negative numbers.");
+    } else {
+        int m = 1;
+        int total = 1;
+
+        while (m <= number1) {
+            total = total * m;
+            m++;
+        }
+
+        System.out.println(total);
     }
-    System.out.println(total);
+
 
 /*
 4.Two numbers are entered through the keyboard. Write a program to find
